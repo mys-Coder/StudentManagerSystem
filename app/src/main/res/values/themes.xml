@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 应用主题：浅色 Material3、无标题栏、淡蓝主色 -->
+    <style name="Base.Theme.StudentManagerSystem" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue_600</item>
+        <item name="colorPrimaryDark">@color/blue_700</item>
+        <item name="colorAccent">@color/blue_500</item>
+        <item name="android:statusBarColor">@color/blue_700</item>
+        <item name="android:windowBackground">@color/page_bg</item>
+    </style>
+
+    <style name="Theme.StudentManagerSystem" parent="Base.Theme.StudentManagerSystem" />
+</resources>

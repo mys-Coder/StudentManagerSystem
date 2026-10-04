@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="8dp"
+    android:elevation="2dp"
+    android:background="@drawable/bg_card">
+
+    <TextView
+        android:id="@+id/tvGradeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@color/text_main"
+        tools:text="张三（2026001）" />
+
+    <EditText
+        android:id="@+id/etGrade"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:hint="未知"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:padding="6dp"
+        android:background="@drawable/bg_search" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="保存"
+        android:background="@drawable/btn_green"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

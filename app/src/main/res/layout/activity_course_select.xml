@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程查询与选课"
+        android:textColor="@color/blue_700"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="14dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="11dp" />
+
+    <!-- 选课概览卡 -->
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/bg_card"
+        android:elevation="2dp"
+        android:padding="12dp"
+        android:lineSpacingExtra="3dp"
+        android:textSize="11.5sp"
+        android:textColor="@color/text_sub"
+        android:text="本学期可选 0 门，你已选 0 门 · 选课学分合计 0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSelectCourses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="4dp"
+        android:paddingBottom="12dp"
+        android:clipToPadding="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="9dp"
+        android:text="选课结果在成绩单中即时更新"
+        android:textColor="@color/text_sub"
+        android:textSize="10.5sp" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="暂无可选课程"
+        android:textColor="@color/text_sub"
+        android:textSize="15sp"
+        android:visibility="gone" />
+</LinearLayout>

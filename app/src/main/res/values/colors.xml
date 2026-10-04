@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 主色：淡蓝体系（数字越大颜色越深） -->
+    <color name="blue_50">#EAF5FC</color>
+    <color name="blue_100">#D6EBF8</color>
+    <color name="blue_200">#A9D7F0</color>
+    <color name="blue_300">#7CC2E8</color>
+    <color name="blue_400">#58ADE0</color>
+    <color name="blue_500">#3E9BD6</color>
+    <color name="blue_600">#2F80B5</color>
+    <color name="blue_700">#24648F</color>
+
+    <!-- 语义强调色：绿=新增/保存 橙=统计/中等 红=删除/不及格 青=学生端 灰=次要/未考 -->
+    <color name="accent_green">#3FB67E</color>
+    <color name="accent_orange">#E8933A</color>
+    <color name="accent_red">#E7605A</color>
+    <color name="accent_teal">#3BA9A5</color>
+    <color name="accent_gray">#8AA0AE</color>
+
+    <!-- 页面底色与文字色 -->
+    <color name="page_bg">#F2F8FD</color>
+    <color name="text_main">#1F3A4D</color>
+    <color name="text_sub">#627B8C</color>
+</resources>

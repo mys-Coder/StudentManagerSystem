@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录卡片：86% 白色 + 20dp 圆角 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#DCFFFFFF" />
+    <corners android:radius="20dp" />
+</shape>

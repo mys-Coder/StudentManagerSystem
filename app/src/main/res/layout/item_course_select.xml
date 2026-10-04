@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="8dp"
+    android:elevation="2dp"
+    android:background="@drawable/bg_card"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!-- 课程图标（背景色按位置轮换） -->
+    <TextView
+        android:id="@+id/tvIcon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_icon_teal"
+        android:gravity="center"
+        android:text="📘"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="11dp">
+
+        <TextView
+            android:id="@+id/tvSelectTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_main"
+            tools:text="计算机通信与网络" />
+
+        <TextView
+            android:id="@+id/tvSelectNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="10sp"
+            android:textColor="@color/text_sub"
+            tools:text="C001 · 任课教师 t001" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/tvChipCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_blue"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="3.5 学分" />
+
+            <TextView
+                android:id="@+id/tvChipHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bg_badge_teal"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="48 学时" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 未选：绿色选课按钮 -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEnroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="选课"
+        android:background="@drawable/btn_green"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12.5sp"
+        android:paddingHorizontal="16dp" />
+
+    <!-- 已选：已选标识 + 退课描边按钮 -->
+    <LinearLayout
+        android:id="@+id/enrolledBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_green"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:text="✓ 已选"
+            android:textColor="@color/accent_green"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="退课"
+            android:background="@drawable/btn_outline_orange"
+            android:textAllCaps="false"
+            android:textColor="@color/accent_orange"
+            android:textSize="10.5sp"
+            android:paddingHorizontal="12dp" />
+    </LinearLayout>
+</LinearLayout>

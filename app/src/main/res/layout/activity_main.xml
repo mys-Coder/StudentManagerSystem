@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 背景：南邮图书馆 + I love NJUPT 扩图壁纸 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login" />
+
+    <!-- 半透明登录卡片（位于上方天空区域；顶部间距由 MainActivity 按状态栏高度动态设置） -->
+    <LinearLayout
+        android:id="@+id/loginPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="0dp"
+        android:layout_marginHorizontal="22dp"
+        android:background="@drawable/bg_login_panel"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="学生信息管理系统"
+            android:textColor="@color/blue_700"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="南京邮电大学 · 嵌入式手机终端开发技术"
+            android:textColor="@color/text_sub"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/etAccount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_login_field"
+            android:hint="账号（工号 / 学号）"
+            android:inputType="text"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/accent_gray"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etPwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_login_field"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/accent_gray"
+            android:textSize="13sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.2"
+            android:text="登 录"
+            android:textSize="15sp"
+            app:backgroundTint="@color/blue_600"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+    <!-- 底部欢迎语胶囊 -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_welcome"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="7dp"
+        android:text="欢迎来到mys的课程作业"
+        android:textColor="@color/blue_700"
+        android:textSize="12sp" />
+</FrameLayout>
